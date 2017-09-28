@@ -1,5 +1,3 @@
-
-
 class Double_Node:
     def __init__(self, val):
         self.next = None
@@ -9,8 +7,9 @@ class Double_Node:
 
 class Doubly_Linked_List:
 
-    head = None
-    tail = None
+    def __init__(self):
+        self.tail = None
+        self.head = None
 
     def add(self, val):
         new_node = Double_Node(val)
